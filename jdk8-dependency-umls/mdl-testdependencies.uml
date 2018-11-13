@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>MODULES</ID>
+  <OriginalElement>mdl-mockwebserver</OriginalElement>
+  <nodes>
+    <node x="1074.55717299578" y="149.0">mdl-guide</node>
+    <node x="766.51967299578" y="595.0">mdl-okhttp</node>
+    <node x="247.35727848101214" y="149.0">mdl-okhttp-dnsoverhttps</node>
+    <node x="10.5" y="347.0">mdl-okcurl</node>
+    <node x="49.0" y="456.0">mdl-crawler</node>
+    <node x="52.25" y="0.0">mdl-okhttp-android-support</node>
+    <node x="715.6293248945144" y="347.0">mdl-okhttp-tls</node>
+    <node x="1240.8562499999998" y="0.0">mdl-benchmarks</node>
+    <node x="357.99999999999994" y="456.0">mdl-okhttp-testing-support</node>
+    <node x="1369.55717299578" y="149.0">mdl-unixdomainsockets</node>
+    <node x="698.1562499999999" y="0.0">mdl-okhttp-tests</node>
+    <node x="890.5571729957801" y="258.0">mdl-mockwebserver</node>
+    <node x="1205.55717299578" y="149.0">mdl-static-server</node>
+    <node x="1570.55717299578" y="149.0">mdl-slack</node>
+    <node x="712.2543248945144" y="149.0">mdl-logging-interceptor</node>
+    <node x="189.0" y="456.0">mdl-simple-client</node>
+    <node x="481.3168248945144" y="149.0">mdl-okhttp-urlconnection</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="mdl-okhttp-android-support" target="mdl-okhttp-testing-support">
+      <point x="-41.40000000000009" y="14.5" />
+      <point x="114.34999999999991" y="49.0" />
+      <point x="150.73227848101214" y="49.0" />
+      <point x="150.73227848101214" y="406.0" />
+      <point x="395.68749999999994" y="406.0" />
+      <point x="-62.8125" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-dnsoverhttps" target="mdl-okhttp">
+      <point x="-62.33333333333326" y="14.5" />
+      <point x="278.5239451476789" y="198.0" />
+      <point x="178.5" y="198.0" />
+      <point x="178.5" y="545.0" />
+      <point x="791.67592299578" y="545.0" />
+      <point x="-32.34375" y="-14.5" />
+    </edge>
+    <edge source="mdl-unixdomainsockets" target="mdl-mockwebserver">
+      <point x="-45.25" y="14.5" />
+      <point x="1414.80717299578" y="218.0" />
+      <point x="1029.10717299578" y="218.0" />
+      <point x="57.05000000000007" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-tests" target="mdl-okhttp">
+      <point x="60.0" y="14.5" />
+      <point x="830.1562499999999" y="49.0" />
+      <point x="1064.05717299578" y="49.0" />
+      <point x="1064.05717299578" y="525.0" />
+      <point x="841.98842299578" y="525.0" />
+      <point x="17.96875" y="-14.5" />
+    </edge>
+    <edge source="mdl-logging-interceptor" target="mdl-okhttp-testing-support">
+      <point x="-69.375" y="14.5" />
+      <point x="735.3793248945144" y="238.0" />
+      <point x="705.1293248945144" y="238.0" />
+      <point x="705.1293248945144" y="416.0" />
+      <point x="496.18749999999994" y="416.0" />
+      <point x="37.6875" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-android-support" target="mdl-mockwebserver">
+      <point x="82.79999999999995" y="14.5" />
+      <point x="238.54999999999995" y="69.0" />
+      <point x="907.7543248945144" y="69.0" />
+      <point x="907.7543248945144" y="198.0" />
+      <point x="947.60717299578" y="198.0" />
+      <point x="-24.450000000000045" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-urlconnection" target="mdl-okhttp-tls">
+      <point x="23.875" y="14.5" />
+      <point x="600.6918248945144" y="238.0" />
+      <point x="599.21875" y="238.0" />
+      <point x="599.21875" y="317.0" />
+      <point x="743.9150391802286" y="317.0" />
+      <point x="-37.714285714285666" y="-14.5" />
+    </edge>
+    <edge source="mdl-mockwebserver" target="mdl-okhttp">
+      <point x="54.33333333333337" y="14.5" />
+      <point x="1026.3905063291134" y="307.0" />
+      <point x="1004.4875" y="307.0" />
+      <point x="1004.4875" y="515.0" />
+      <point x="834.80092299578" y="515.0" />
+      <point x="10.78125" y="-14.5" />
+    </edge>
+    <edge source="mdl-benchmarks" target="mdl-okhttp-urlconnection">
+      <point x="-54.0" y="14.5" />
+      <point x="1258.8562499999998" y="119.0" />
+      <point x="640.4834915611812" y="119.0" />
+      <point x="63.66666666666674" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-dnsoverhttps" target="mdl-mockwebserver">
+      <point x="62.33333333333326" y="14.5" />
+      <point x="403.1906118143454" y="228.0" />
+      <point x="898.70717299578" y="228.0" />
+      <point x="-73.35000000000002" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-dnsoverhttps" target="mdl-okhttp-testing-support">
+      <point x="0.0" y="14.5" />
+      <point x="340.8572784810122" y="396.0" />
+      <point x="420.81249999999994" y="396.0" />
+      <point x="-37.6875" y="-14.5" />
+    </edge>
+    <edge source="mdl-benchmarks" target="mdl-okhttp-tls">
+      <point x="18.0" y="14.5" />
+      <point x="1330.8562499999998" y="59.0" />
+      <point x="1687.05717299578" y="59.0" />
+      <point x="1687.05717299578" y="327.0" />
+      <point x="838.2007534659431" y="327.0" />
+      <point x="56.57142857142867" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-tests" target="mdl-okhttp-urlconnection">
+      <point x="-36.0" y="14.5" />
+      <point x="734.1562499999999" y="99.0" />
+      <point x="576.8168248945144" y="99.0" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="mdl-simple-client" target="mdl-okhttp">
+      <point x="5.6843418860808015E-14" y="14.5" />
+      <point x="263.5" y="535.0" />
+      <point x="798.86342299578" y="535.0" />
+      <point x="-25.15625" y="-14.5" />
+    </edge>
+    <edge source="mdl-mockwebserver" target="mdl-okhttp-tls">
+      <point x="-54.33333333333337" y="14.5" />
+      <point x="917.7238396624466" y="307.0" />
+      <point x="800.4864677516573" y="307.0" />
+      <point x="18.85714285714289" y="-14.5" />
+    </edge>
+    <edge source="mdl-logging-interceptor" target="mdl-mockwebserver">
+      <point x="69.375" y="14.5" />
+      <point x="874.1293248945144" y="208.0" />
+      <point x="931.3071729957801" y="208.0" />
+      <point x="-40.75" y="-14.5" />
+    </edge>
+    <edge source="mdl-benchmarks" target="mdl-mockwebserver">
+      <point x="-18.0" y="14.5" />
+      <point x="1294.8562499999998" y="129.0" />
+      <point x="977.5571729957801" y="129.0" />
+      <point x="977.5571729957801" y="198.0" />
+      <point x="980.20717299578" y="198.0" />
+      <point x="8.149999999999977" y="-14.5" />
+    </edge>
+    <edge source="mdl-static-server" target="mdl-mockwebserver">
+      <point x="-36.0" y="14.5" />
+      <point x="1241.55717299578" y="208.0" />
+      <point x="1012.8071729957801" y="208.0" />
+      <point x="40.75" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-tests" target="mdl-okhttp-testing-support">
+      <point x="-60.0" y="14.5" />
+      <point x="710.1562499999999" y="89.0" />
+      <point x="470.8168248945144" y="89.0" />
+      <point x="470.8168248945144" y="396.0" />
+      <point x="445.93749999999994" y="396.0" />
+      <point x="-12.5625" y="-14.5" />
+    </edge>
+    <edge source="mdl-benchmarks" target="mdl-okhttp">
+      <point x="53.99999999999994" y="14.5" />
+      <point x="1366.8562499999998" y="49.0" />
+      <point x="1698.05717299578" y="49.0" />
+      <point x="1698.05717299578" y="575.0" />
+      <point x="877.92592299578" y="575.0" />
+      <point x="53.90625" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-tls" target="mdl-okhttp-testing-support">
+      <point x="-33.0" y="14.5" />
+      <point x="748.6293248945144" y="426.0" />
+      <point x="521.3125" y="426.0" />
+      <point x="62.8125" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-tests" target="mdl-okhttp-tls">
+      <point x="-12.0" y="14.5" />
+      <point x="758.1562499999999" y="109.0" />
+      <point x="682.8168248945144" y="109.0" />
+      <point x="682.8168248945144" y="307.0" />
+      <point x="762.7721820373715" y="307.0" />
+      <point x="-18.85714285714289" y="-14.5" />
+    </edge>
+    <edge source="mdl-guide" target="mdl-mockwebserver">
+      <point x="-37.0" y="14.5" />
+      <point x="1093.05717299578" y="198.0" />
+      <point x="996.5071729957801" y="198.0" />
+      <point x="24.450000000000045" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-urlconnection" target="mdl-okhttp">
+      <point x="-23.875" y="14.5" />
+      <point x="552.9418248945144" y="238.0" />
+      <point x="588.21875" y="238.0" />
+      <point x="588.21875" y="515.0" />
+      <point x="813.23842299578" y="515.0" />
+      <point x="-10.78125" y="-14.5" />
+    </edge>
+    <edge source="mdl-mockwebserver" target="mdl-okhttp-testing-support">
+      <point x="0.0" y="14.5" />
+      <point x="972.0571729957801" y="307.0" />
+      <point x="980.6311445147678" y="307.0" />
+      <point x="980.6311445147678" y="436.0" />
+      <point x="546.4375" y="436.0" />
+      <point x="87.9375" y="-14.5" />
+    </edge>
+    <edge source="mdl-static-server" target="mdl-okhttp">
+      <point x="36.0" y="14.5" />
+      <point x="1313.55717299578" y="545.0" />
+      <point x="856.36342299578" y="545.0" />
+      <point x="32.34375" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-tls" target="mdl-okhttp">
+      <point x="33.0" y="14.5" />
+      <point x="814.6293248945144" y="505.0" />
+      <point x="820.42592299578" y="505.0" />
+      <point x="-3.59375" y="-14.5" />
+    </edge>
+    <edge source="mdl-guide" target="mdl-okhttp">
+      <point x="37.0" y="14.5" />
+      <point x="1167.05717299578" y="198.0" />
+      <point x="1159.6465981012657" y="198.0" />
+      <point x="1159.6465981012657" y="535.0" />
+      <point x="849.17592299578" y="535.0" />
+      <point x="25.15625" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-tests" target="mdl-mockwebserver">
+      <point x="36.0" y="14.5" />
+      <point x="806.1562499999999" y="59.0" />
+      <point x="966.5571729957801" y="59.0" />
+      <point x="966.5571729957801" y="198.0" />
+      <point x="963.90717299578" y="198.0" />
+      <point x="-8.149999999999977" y="-14.5" />
+    </edge>
+    <edge source="mdl-slack" target="mdl-okhttp">
+      <point x="26.5" y="14.5" />
+      <point x="1650.05717299578" y="565.0" />
+      <point x="870.73842299578" y="565.0" />
+      <point x="46.71875" y="-14.5" />
+    </edge>
+    <edge source="mdl-okcurl" target="mdl-okhttp">
+      <point x="-28.0" y="14.5" />
+      <point x="38.5" y="565.0" />
+      <point x="777.30092299578" y="565.0" />
+      <point x="-46.71875" y="-14.5" />
+    </edge>
+    <edge source="mdl-slack" target="mdl-mockwebserver">
+      <point x="-26.5" y="14.5" />
+      <point x="1597.05717299578" y="228.0" />
+      <point x="1045.40717299578" y="228.0" />
+      <point x="73.35000000000002" y="-14.5" />
+    </edge>
+    <edge source="mdl-crawler" target="mdl-okhttp">
+      <point x="0.0" y="14.5" />
+      <point x="108.5" y="555.0" />
+      <point x="784.48842299578" y="555.0" />
+      <point x="-39.53125" y="-14.5" />
+    </edge>
+    <edge source="mdl-guide" target="mdl-okhttp-tls">
+      <point x="0.0" y="14.5" />
+      <point x="1130.05717299578" y="198.0" />
+      <point x="1138.6311445147678" y="198.0" />
+      <point x="1138.6311445147678" y="317.0" />
+      <point x="819.3436106088002" y="317.0" />
+      <point x="37.71428571428578" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-android-support" target="mdl-okhttp-urlconnection">
+      <point x="41.40000000000009" y="14.5" />
+      <point x="197.1500000000001" y="79.0" />
+      <point x="513.1501582278477" y="79.0" />
+      <point x="-63.66666666666674" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-testing-support" target="mdl-okhttp">
+      <point x="0.0" y="14.5" />
+      <point x="458.49999999999994" y="525.0" />
+      <point x="806.05092299578" y="525.0" />
+      <point x="-17.96875" y="-14.5" />
+    </edge>
+    <edge source="mdl-okcurl" target="mdl-okhttp-testing-support">
+      <point x="28.0" y="14.5" />
+      <point x="94.5" y="416.0" />
+      <point x="370.56249999999994" y="416.0" />
+      <point x="-87.9375" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-urlconnection" target="mdl-okhttp-testing-support">
+      <point x="-71.625" y="14.5" />
+      <point x="505.1918248945144" y="238.0" />
+      <point x="498.2230748945144" y="238.0" />
+      <point x="498.2230748945144" y="406.0" />
+      <point x="471.06249999999994" y="406.0" />
+      <point x="12.5625" y="-14.5" />
+    </edge>
+    <edge source="mdl-logging-interceptor" target="mdl-okhttp-tls">
+      <point x="-23.125" y="14.5" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-android-support" target="mdl-okhttp">
+      <point x="-82.79999999999995" y="14.5" />
+      <point x="72.95000000000005" y="49.0" />
+      <point x="0.0" y="49.0" />
+      <point x="0.0" y="575.0" />
+      <point x="770.11342299578" y="575.0" />
+      <point x="-53.90625" y="-14.5" />
+    </edge>
+    <edge source="mdl-logging-interceptor" target="mdl-okhttp">
+      <point x="23.125" y="14.5" />
+      <point x="827.8793248945144" y="238.0" />
+      <point x="858.1293248945144" y="238.0" />
+      <point x="858.1293248945144" y="505.0" />
+      <point x="827.61342299578" y="505.0" />
+      <point x="3.59375" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-tests" target="mdl-logging-interceptor">
+      <point x="12.0" y="14.5" />
+      <point x="782.1562499999999" y="79.0" />
+      <point x="804.7543248945144" y="79.0" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-android-support" target="mdl-okhttp-tls">
+      <point x="0.0" y="14.5" />
+      <point x="155.75" y="49.0" />
+      <point x="161.73227848101214" y="49.0" />
+      <point x="161.73227848101214" y="327.0" />
+      <point x="725.0578963230857" y="327.0" />
+      <point x="-56.571428571428555" y="-14.5" />
+    </edge>
+    <edge source="mdl-okhttp-urlconnection" target="mdl-mockwebserver">
+      <point x="71.625" y="14.5" />
+      <point x="648.4418248945144" y="218.0" />
+      <point x="915.0071729957801" y="218.0" />
+      <point x="-57.049999999999955" y="-14.5" />
+    </edge>
+    <edge source="mdl-unixdomainsockets" target="mdl-okhttp">
+      <point x="45.25" y="14.5" />
+      <point x="1505.30717299578" y="555.0" />
+      <point x="863.55092299578" y="555.0" />
+      <point x="39.53125" y="-14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8" x="996.25" y="506.0277777777776" />
+  <SelectedNodes>
+    <node>mdl-crawler</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Test dependencies</Category>
+  </Categories>
+</Diagram>
+
