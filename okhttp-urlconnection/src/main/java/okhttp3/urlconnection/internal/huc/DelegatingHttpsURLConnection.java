@@ -14,8 +14,15 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package okhttp3.internal.huc;
+package okhttp3.urlconnection.internal.huc;
 
+import okhttp3.Handshake;
+import org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLPeerUnverifiedException;
+import javax.net.ssl.SSLSocketFactory;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -27,12 +34,6 @@ import java.security.Principal;
 import java.security.cert.Certificate;
 import java.util.List;
 import java.util.Map;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLPeerUnverifiedException;
-import javax.net.ssl.SSLSocketFactory;
-import okhttp3.Handshake;
-import org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement;
 
 /**
  * Implement an HTTPS connection by delegating to an HTTP connection for everything but the

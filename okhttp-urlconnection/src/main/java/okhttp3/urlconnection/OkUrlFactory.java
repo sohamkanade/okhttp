@@ -13,17 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package okhttp3;
+package okhttp3.urlconnection;
 
-import java.net.HttpURLConnection;
-import java.net.Proxy;
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.URLStreamHandler;
-import java.net.URLStreamHandlerFactory;
-import okhttp3.internal.URLFilter;
-import okhttp3.internal.huc.OkHttpURLConnection;
-import okhttp3.internal.huc.OkHttpsURLConnection;
+import okhttp3.OkHttpClient;
+import okhttp3.urlconnection.internal.URLFilter;
+import okhttp3.urlconnection.internal.huc.OkHttpURLConnection;
+import okhttp3.urlconnection.internal.huc.OkHttpsURLConnection;
+
+import java.net.*;
 
 /**
  * @deprecated OkHttp will be dropping its ability to be used with {@link HttpURLConnection} in an
@@ -75,10 +72,10 @@ public final class OkUrlFactory implements URLStreamHandlerFactory, Cloneable {
   }
 
   /**
-   * Creates a URLStreamHandler as a {@link java.net.URL#setURLStreamHandlerFactory}.
+   * Creates a URLStreamHandler as a {@link URL#setURLStreamHandlerFactory}.
    *
    * <p>This code configures OkHttp to handle all HTTP and HTTPS connections
-   * created with {@link java.net.URL#openConnection()}: <pre>   {@code
+   * created with {@link URL#openConnection()}: <pre>   {@code
    *
    *   OkHttpClient okHttpClient = new OkHttpClient();
    *   URL.setURLStreamHandlerFactory(new OkUrlFactory(okHttpClient));
