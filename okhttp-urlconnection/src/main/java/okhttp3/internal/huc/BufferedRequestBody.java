@@ -13,13 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package okhttp3.urlconnection.internal.huc;
+package okhttp3.internal.huc;
 
+import java.io.IOException;
 import okhttp3.Request;
 import okio.Buffer;
 import okio.BufferedSink;
-
-import java.io.IOException;
 
 /**
  * This request body involves an application thread only. First all bytes are written to the buffer.

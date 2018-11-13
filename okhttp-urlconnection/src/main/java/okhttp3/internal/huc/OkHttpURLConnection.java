@@ -14,12 +14,44 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package okhttp3.urlconnection.internal.huc;
+package okhttp3.internal.huc;
 
-import okhttp3.*;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InterruptedIOException;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.InetSocketAddress;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.Proxy;
+import java.net.SocketPermission;
+import java.net.URL;
+import java.net.UnknownHostException;
+import java.security.Permission;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Date;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Dispatcher;
+import okhttp3.Handshake;
+import okhttp3.Headers;
+import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Protocol;
+import okhttp3.Request;
+import okhttp3.Response;
 import okhttp3.internal.Internal;
-import okhttp3.urlconnection.internal.JavaNetHeaders;
-import okhttp3.urlconnection.internal.URLFilter;
+import okhttp3.internal.JavaNetHeaders;
+import okhttp3.internal.URLFilter;
 import okhttp3.internal.Version;
 import okhttp3.internal.http.HttpDate;
 import okhttp3.internal.http.HttpHeaders;
@@ -27,12 +59,6 @@ import okhttp3.internal.http.HttpMethod;
 import okhttp3.internal.http.StatusLine;
 import okhttp3.internal.platform.Platform;
 import okio.Buffer;
-
-import java.io.*;
-import java.net.*;
-import java.security.Permission;
-import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 import static okhttp3.internal.platform.Platform.WARN;
 

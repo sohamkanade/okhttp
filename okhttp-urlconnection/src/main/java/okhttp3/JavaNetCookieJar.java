@@ -13,12 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package okhttp3.urlconnection;
-
-import okhttp3.Cookie;
-import okhttp3.CookieJar;
-import okhttp3.HttpUrl;
-import okhttp3.internal.platform.Platform;
+package okhttp3;
 
 import java.io.IOException;
 import java.net.CookieHandler;
@@ -27,12 +22,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import okhttp3.internal.platform.Platform;
 
 import static okhttp3.internal.Util.delimiterOffset;
 import static okhttp3.internal.Util.trimSubstring;
 import static okhttp3.internal.platform.Platform.WARN;
 
-/** A cookie jar that delegates to a {@link CookieHandler}. */
+/** A cookie jar that delegates to a {@link java.net.CookieHandler}. */
 public final class JavaNetCookieJar implements CookieJar {
   private final CookieHandler cookieHandler;
 
@@ -44,7 +40,7 @@ public final class JavaNetCookieJar implements CookieJar {
     if (cookieHandler != null) {
       List<String> cookieStrings = new ArrayList<>();
       for (Cookie cookie : cookies) {
-        cookieStrings.add(cookie.toString());
+        cookieStrings.add(cookie.toString(true));
       }
       Map<String, List<String>> multimap = Collections.singletonMap("Set-Cookie", cookieStrings);
       try {

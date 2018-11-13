@@ -13,11 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package okhttp3.urlconnection.internal;
+package okhttp3.internal;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 import okhttp3.Headers;
-
-import java.util.*;
 
 public final class JavaNetHeaders {
   private JavaNetHeaders() {

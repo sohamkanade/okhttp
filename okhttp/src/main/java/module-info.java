@@ -6,5 +6,4 @@ module okhttp {
     exports okhttp3.internal.platform;
     exports okhttp3.internal.publicsuffix;
     exports okhttp3.internal.annotations;
-
 }

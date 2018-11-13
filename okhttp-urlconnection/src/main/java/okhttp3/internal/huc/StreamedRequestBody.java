@@ -13,15 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package okhttp3.urlconnection.internal.huc;
+package okhttp3.internal.huc;
 
+import java.io.IOException;
 import okhttp3.internal.http.UnrepeatableRequestBody;
 import okio.Buffer;
 import okio.BufferedSink;
 import okio.Okio;
 import okio.Pipe;
-
-import java.io.IOException;
 
 /**
  * This request body streams bytes from an application thread to an OkHttp dispatcher thread via a
